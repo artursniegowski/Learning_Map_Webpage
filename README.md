@@ -1,4 +1,4 @@
-# Learning Map - Webpage
+# Learning_Map - Webpage
 Learning Map - Webpage was developed using Bootstrap 5, HTML and some inline CSS.
 It is a simple webpage depicting a templte for the main page of a learning webpage.
 It's main features are: navbar, jumbotron, flex, grid system, cards, slidebars.
