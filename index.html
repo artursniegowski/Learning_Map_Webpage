@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Learning Map</title>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="https://www.svgrepo.com/show/393867/world.svg" alt="Logo" width="24" height="24" class="d-inline-block align-text-top">
+                Learning MAP
+            </a>  
+            <div class="navbar"> 
+                <div class="dropdown mx-4">
+                    <button class="btn btn-light rounded-circle p-0 m-0" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="rounded-circle p-0 m-0" src="https://images.unsplash.com/photo-1621659958625-118bff31adcf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="ProfilePicture" width="32" height="32">
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item" href="#">UserName</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Status</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Log out</a></li>
+                    </ul> 
+                </div>
+                <div class="dropdown mx-4">
+                    <button class="btn btn-light rounded-circle position-relative p-0 m-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        &#128276
+                        <span class="position-absolute top-0 start-100 translate-middle p-2 bg-primary border border-light rounded-circle"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Notifications</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">More</a></li>
+                    </ul> 
+                </div>
+                <button class="navbar-toggler mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div> 
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown mx-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Browse
+                        </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Python</a></li>
+                        <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                        <li><a class="dropdown-item" href="#">C#</a></li>
+                        <li><a class="dropdown-item" href="#">C++</a></li>
+                        <li><a class="dropdown-item" href="#">CSS</a></li>
+                        <li><a class="dropdown-item" href="#">HTML</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item dropdown mx-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Learn</a></li>
+                        <li><a class="dropdown-item" href="#">Explore</a></li>
+                        <li><a class="dropdown-item" href="#">Test</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item dropdown mx-3">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ...
+                        </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Documentation</a></li>
+                        <li><a class="dropdown-item" href="#">Log</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <form class="d-flex" role="search">
+                            <span class="input-group-text" id="basic-addon1">
+                                <img src="https://img.icons8.com/ios/344/search--v1.png" alt="Search_Logo" width="16" height="16" class="d-inline-block align-text-middle">
+                            </span>
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- hero section -->
+    <div class="p-5 bg-light rounded-3">
+        <div class="container-fluid py-5">
+            <div class="row align-items-center g-4 p-2">
+                <div class="col-12 col-lg-6 col-xxl-8">
+                    <h1 class="display-5 fw-bold">Welcome to Learning Map</h1>
+                    <p class="fs-4">
+                        The best Website to guide you through your journey of teaching you all the necessary skills you will need to become a master of your programming language
+                    </p>
+                    <a class="btn btn-success" type="button" href="#">Browse Courses</a>
+                    <a class="btn btn-white border border-dark" type="button" href="#">Are You Instructor?</a>
+                </div>
+                <div class="col-12 col-lg-6 col-xxl-4">
+                    <img src="https://images.unsplash.com/photo-1520299607509-dcd935f9a839?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80" alt class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- options / info under hero section -->
+    <div class="bg-white py-4 px-0 shadow-sm">
+        <div class="container px-0">
+            <div class="d-flex flex-column flex-md-row justify-content-evenly text-center d-flex align-items-center">
+                <div class="d-flex align-items-center p-2 mx-3">
+                    <span>
+                        <i class="fa fa-video-camera" aria-hidden="true" style="font-size:24px"></i>
+                    </span>
+                    <div class="ms-3">
+                        <h4 class="mb-0 fs-5">30,000 online courses</h4>
+                        <p class="mb-0 fw-light fs-6">Enjoy a variety of fresh topics</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center p-2 mx-3">
+                    <span>
+                        <i class="fa fa-users" aria-hidden="true" style="font-size:24px"></i>
+                    </span>
+                    <div class="ms-3">
+                        <h4 class="mb-0 fs-5">Expert instruction</h4>
+                        <p class="mb-0 fw-light fs-6">Find the right instrunctor for you</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center p-2 mx-3">
+                    <span>
+                        <i class="fa fa-clock-o" aria-hidden="true" style="font-size:24px"></i>
+                    </span>
+                    <div class="ms-3">
+                        <h4 class="mb-0 fs-5">Lifetime access</h4>
+                        <p class="mb-0 fw-light fs-6">Learn on your schedule</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main content -->
+    <div class="bg-light pt-5 pb-5">
+        <div class="container">
+            <div class="row mb-4 pt-4">
+                <div class="col">
+                    <h2 class="mb-0">Recomended for you</h3>
+                </div>
+            </div>
+            <div class="position-relative px-5">
+
+                <div id="carouselExampleInterval" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="6000">
+                            <div class="row">
+
+                                <div class="col g-3 d-flex justify-content-center">
+                                    <div class="card" style="width: 18rem;">
+                                        <img class="bg-dark" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Python Beginner</h5>
+                                            <p class="card-text">Perfect for beginners to get started with programming</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Mark Marson</li>
+                                            <li class="list-group-item">600 $</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <a href="#" class="card-link">Python course I</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col g-3 d-flex justify-content-center">
+                                    <div class="card" style="width: 18rem;">
+                                        <img class="bg-dark" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Python Intermediate</h5>
+                                            <p class="card-text">Perfect for programmers with some basic experience</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Mark Marson</li>
+                                            <li class="list-group-item">1600 $</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <a href="#" class="card-link">Python course II</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col g-3 d-flex justify-content-center">
+                                    <div class="card" style="width: 18rem;">
+                                        <img class="bg-dark" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Python Expert</h5>
+                                            <p class="card-text">Perfect for intermediate experts wanting to take their skills to the next level</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Mark Marson</li>
+                                            <li class="list-group-item">2600 $</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <a href="#" class="card-link">Python course III</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="6000">
+                            <div class="row">
+                                
+                                <div class="col g-3 d-flex justify-content-center">
+                                    <div class="card" style="width: 18rem;">
+                                        <img class="bg-dark" src="https://jaki-jezyk-programowania.pl/img/technologies/javascript.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">JavaScript Beginner</h5>
+                                            <p class="card-text">Perfect for beginners to get started with programming</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Mark Marson</li>
+                                            <li class="list-group-item">600 $</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <a href="#" class="card-link">JavaScript course I</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col g-3 d-flex justify-content-center">
+                                    <div class="card" style="width: 18rem;">
+                                        <img class="bg-dark" src="https://jaki-jezyk-programowania.pl/img/technologies/javascript.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">JavaScript Intermediate</h5>
+                                            <p class="card-text">Perfect for programmers with some basic experience</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Mark Marson</li>
+                                            <li class="list-group-item">1600 $</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <a href="#" class="card-link">JavaScript course II</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col g-3 d-flex justify-content-center">
+                                    <div class="card" style="width: 18rem;">
+                                        <img class="bg-dark" src="https://jaki-jezyk-programowania.pl/img/technologies/javascript.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">JavaScript Expert</h5>
+                                            <p class="card-text">Perfect for intermediate experts wanting to take their skills to the next level</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Mark Marson</li>
+                                            <li class="list-group-item">2600 $</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <a href="#" class="card-link">JavaScript course III</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="6000">
+                            <div class="row">
+                                
+                                <div class="col g-3 d-flex justify-content-center">
+                                    <div class="card" style="width: 18rem;">
+                                        <img class="bg-dark" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/C_Sharp_wordmark.svg/240px-C_Sharp_wordmark.svg.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">C# Beginner</h5>
+                                            <p class="card-text">Perfect for beginners to get started with programming</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Mark Marson</li>
+                                            <li class="list-group-item">600 $</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <a href="#" class="card-link">C# course I</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col g-3 d-flex justify-content-center">
+                                    <div class="card" style="width: 18rem;">
+                                        <img class="bg-dark" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/C_Sharp_wordmark.svg/240px-C_Sharp_wordmark.svg.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">C# Intermediate</h5>
+                                            <p class="card-text">Perfect for programmers with some basic experience</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Mark Marson</li>
+                                            <li class="list-group-item">1600 $</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <a href="#" class="card-link">C# course II</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col g-3 d-flex justify-content-center">
+                                    <div class="card" style="width: 18rem;">
+                                        <img class="bg-dark" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/C_Sharp_wordmark.svg/240px-C_Sharp_wordmark.svg.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">C# Expert</h5>
+                                            <p class="card-text">Perfect for intermediate experts wanting to take their skills to the next level</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Mark Marson</li>
+                                            <li class="list-group-item">2600 $</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <a href="#" class="card-link">C# course III</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev position-absolute top-50 start-0 translate-middle" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                        <span class="fa fa-caret-square-o-left" aria-hidden="true" style="font-size: 32px; color: red;"></span>
+                    </button>
+                    <button class="carousel-control-next position-absolute top-50 start-100 translate-middle" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                        <span class="fa fa-caret-square-o-right" aria-hidden="true" style="font-size: 32px; color: red;"></span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="container">
+        <div class="row align-items-center g-0 py-2 text-center border-top pt-1">
+            <div class="col-12 col-md-8 text-center text-md-start">
+                <span>© 2022 Geeks. All Rights Reserved.</span>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="row">
+                    <a class="col-12 col-sm p-2 text-center text-decoration-none" href="#">Privacy</a>
+                    <a class="col-12 col-sm p-2 text-center text-decoration-none" href="#">Terms</a>
+                    <a class="col-12 col-sm p-2 text-center text-decoration-none" href="#">Feedback</a>
+                    <a class="col-12 col-sm p-2 text-center text-decoration-none" href="#">Support</a>             
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
