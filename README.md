@@ -10,4 +10,4 @@ and desktops.</br>
 
 
 ***The home page.***</br>
-![Screenshot](docs/img/home.png)</br>
+![Screenshot](docs/img/index.png)</br>
